@@ -262,6 +262,89 @@
       font-size: 0.9rem;
       color: #bbb;
     }
+    /* Add this to your existing CSS */
+
+/* Ensure images are responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Styles for smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .portfolio-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .portfolio-item {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .contact-details a {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Styles for phones and smaller screens (max-width: 480px) */
+@media (max-width: 480px) {
+  nav {
+    padding: 8px;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .section h2 {
+    font-size: 2rem;
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-item {
+    padding: 10px;
+  }
+
+  .contact-details a {
+    font-size: 0.8rem;
+    padding: 8px 12px;
+  }
+}
+
   </style>
 </head>
 <body>
